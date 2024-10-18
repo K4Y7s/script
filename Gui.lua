@@ -269,6 +269,7 @@ do
     local FOVManagement = DrawingManagementBox:AddTab("FOV")
     local DeadzoneFOVManagement = DrawingManagementBox:AddTab("Deadzone")
     local TracerManagement = DrawingManagementBox:AddTab("Tracer")
+    local EspManagement = DrawingManagementBox:AddTab("Esp")
 
     -- //
     local AimingSettingsFOVSettings = AimingSettings.FOVSettings
@@ -539,8 +540,3 @@ SaveManager:SetIgnoreIndexes({"MenuKeybind"})
 -- // Return
 Aiming.GUI = {Library, AimingTab, Window, UISettingsTab, ThemeManager, SaveManager}
 return Library, AimingTab, Window, UISettingsTab, ThemeManager, SaveManager
-
-
--- //
-local UISettingsTab = Window:AddTab("Esp")
-

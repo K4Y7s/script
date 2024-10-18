@@ -23,7 +23,7 @@ if (AutoShow == nil) then
     AutoShow = true
 end
 local Window = Library:CreateWindow({
-    Title = "epic hax",
+    Title = "silent aim",
     Center = true,
     AutoShow = AutoShow
 })
@@ -400,6 +400,13 @@ do
         Tooltip = "Toggle the tracer on and off",
         Callback = function(Value)
             AimingSettingsEspSettings.Enabled = Value
+        end        
+    }):AddColorPicker("AimingEspColour", {
+        Text = "Colour",
+        Default = AimingSettingsEspSettings.Colour,
+        Tooltip = "The colour of the tracer",
+        Callback = function(Value)
+            AimingSettingsEspSettings.Colour = Value
         end
     })
     

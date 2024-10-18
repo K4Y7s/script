@@ -540,10 +540,3 @@ SaveManager:SetIgnoreIndexes({"MenuKeybind"})
 Aiming.GUI = {Library, AimingTab, Window, UISettingsTab, ThemeManager, SaveManager}
 return Library, AimingTab, Window, UISettingsTab, ThemeManager, SaveManager
 
--- //
-local UISettingsTab = Window:AddTab("Esp")
-do
-    local MenuGroup = UISettingsTab:AddLeftGroupbox("Esp Settings")
-
-    MenuGroup:AddButton("Load", function()
-    end)

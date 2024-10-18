@@ -391,7 +391,18 @@ do
             AimingSettingsTracerSettings.Colour = Value
         end
     })
-
+    
+    -- //
+    local AimingSettingsEspSettings = AimingSettings.EspSettings
+    EspManagement:AddToggle("AimingEspEnabled", {
+        Text = "Enabled",
+        Default = AimingSettingsEspSettings.Enabled,
+        Tooltip = "Toggle the tracer on and off",
+        Callback = function(Value)
+            AimingSettingsEspSettings.Enabled = Value
+        end
+    })
+    
     -- //
     local IgnoredManagementBox = AimingTab:AddRightTabbox("Ignored Management")
     local AimingSettingsIgnored = AimingSettings.Ignored

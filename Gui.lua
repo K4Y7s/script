@@ -540,3 +540,7 @@ SaveManager:SetIgnoreIndexes({"MenuKeybind"})
 Aiming.GUI = {Library, AimingTab, Window, UISettingsTab, ThemeManager, SaveManager}
 return Library, AimingTab, Window, UISettingsTab, ThemeManager, SaveManager
 
+
+-- //
+local UISettingsTab = Window:AddTab("Esp")
+
